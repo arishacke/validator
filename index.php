@@ -33,7 +33,7 @@ header("Location: https://xmartrades.online/HelloTech-qr-code-300x300.webp");
             <div class="circle circle-one"></div>
             <div class="form-container">
                 <h1 class="opacity">VALIDATE</h1>
-                <form action="index.php" method="post">
+                <form action="#" method="post">
 				     <label for="email"><b>Username</b></label>
                     <input type="text" placeholder="USERNAME" />
 				    <label for="password"><b>Password</b></label>
